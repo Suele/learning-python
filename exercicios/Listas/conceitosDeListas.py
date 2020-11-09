@@ -12,6 +12,16 @@
 -Strings são interaveis ex: >>>>> ['Maria', 'Pedro', 'Joao', 'Suelen', 'Jose', ['Bernardo', 'Bento'], 'Mario', 'Pedro', 'J', 'e', 's', 'u', 's']
 OBS: extend(12) => vai dar erro o certo seria extend([12, 14, 22])
 
+***insert => Para inserir elementos em uma determinada posição.
+OBS: Lembrando que o insert não exclue o elemento que está na posição, e sim o desloca para a proxima posição.
+EX: listaNomes.insert(0, 'Luis')
+
+***Para juntar listas => lista = lista1 + lista2
+
+***Pop => remove o ultimo elemento da lista se não for passado um parametro e retorna o elemento removido ou
+          se for passado um indice como parametro ele será removido e retornado.
+          EX: lista.pop() ou lista.pop(2)
+
 """
 
 listaNomes = ['Maria', 'Pedro', 'Joao']
@@ -29,5 +39,14 @@ print('>>>>>', listaNomes)
 listaNomes.extend('Jesus')
 print('>>>>>', listaNomes)
 
+listaNomes.insert(0, 'Luis')
+print(listaNomes)
+
+
 # vai dar error TypeError: 'int' object is not iterable
-print(listaNomes.extend(12))
+# print(listaNomes.extend(12))
+
+print(listaNomes.pop())
+print(listaNomes)
+print(listaNomes.pop(2))
+print(listaNomes)
