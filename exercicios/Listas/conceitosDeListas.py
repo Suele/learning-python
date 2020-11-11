@@ -22,31 +22,78 @@ EX: listaNomes.insert(0, 'Luis')
           se for passado um indice como parametro ele será removido e retornado.
           EX: lista.pop() ou lista.pop(2)
 
+
+
+>>>>> METODOS que podemos utilizar em LISTAS   
+      
+*** Split => Transforma uma variavel do tipo string em uma lista.
+    OBS: Os espaços em branco da string serão substituidos por virgulas.
+    EX: descricaoDeUmCurso = 'Programação python essencial.'
+        descricaoDeUmCurso = descricaoDeUmCurso.split()
+        print('>>>> Descrição do curso com split: ', descricaoDeUmCurso)
+
+*** Join => Para transformar uma lista para uma string.
+    OBS: O join retorna uma nova string.
+    EX: lista1 = ['Ṕrogramação', 'em', 'python', 'é', 'essencial']
+        descricao = ' '.join(lista1)
+        print('>>>>> Lista transformada para string', descricao)
+
 """
 
-listaNomes = ['Maria', 'Pedro', 'Joao']
-print('>>>>', listaNomes)
-listaNomes.append('Suelen')
-listaNomes.append('Jose')
-print('>>>>', listaNomes)
+#listaNomes = ['Maria', 'Pedro', 'Joao']
+#print('>>>>', listaNomes)
+# listaNomes.append('Suelen')
+# listaNomes.append('Jose')
+# print('>>>>', listaNomes)
 
-# adiciona uma lista dentro de outra lista
-listaNomes.append(['Bernardo', 'Bento'])
-print('>>>>', listaNomes)
+# # adiciona uma lista dentro de outra lista
+# listaNomes.append(['Bernardo', 'Bento'])
+# print('>>>>', listaNomes)
 
-listaNomes.extend(['Mario', 'Pedro'])
-print('>>>>>', listaNomes)
-listaNomes.extend('Jesus')
-print('>>>>>', listaNomes)
+# listaNomes.extend(['Mario', 'Pedro'])
+# print('>>>>>', listaNomes)
+# listaNomes.extend('Jesus')
+# print('>>>>>', listaNomes)
 
-listaNomes.insert(0, 'Luis')
-print(listaNomes)
+# listaNomes.insert(0, 'Luis')
+# print(listaNomes)
 
 
 # vai dar error TypeError: 'int' object is not iterable
 # print(listaNomes.extend(12))
 
-print(listaNomes.pop())
-print(listaNomes)
-print(listaNomes.pop(2))
-print(listaNomes)
+# print(listaNomes.pop())
+# print(listaNomes)
+# print(listaNomes.pop(2))
+# print(listaNomes)
+
+print()
+
+descricaoDeUmCurso = 'Programação python essencial.'
+print('>>>> Descrição do Curso: ', descricaoDeUmCurso)
+print('Qual da variavel descricaoDeUmCurso: ', type(descricaoDeUmCurso))
+
+print()
+
+# O metodo split transforma a variavel descricaoDeUmCurso que era uma string
+# em uma lista.
+descricaoDeUmCurso = descricaoDeUmCurso.split()
+print('>>>> Descrição do curso com split: ', descricaoDeUmCurso)
+print('Qual o tipo da variavel descricaoDeUmCurso: ', type(descricaoDeUmCurso))
+
+print()
+
+# Transformar uma lista em uma string
+lista1 = ['Ṕrogramação', 'em', 'python', 'é', 'essencial']
+print('>>>> Lista1', lista1)
+print('O tipo da lista1: ', type(lista1))
+
+print()
+
+# O metodo join transforma uma lista em uma string
+# neste caso separando as palavras por espaços em branco
+descricao = ' '.join(lista1)
+print('>>>>> lista tranformada em string: ', descricao)
+print('O tipo da variavel descricao: ', type(descricao))
+
+print()
