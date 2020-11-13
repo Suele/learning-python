@@ -1,0 +1,21 @@
+Comandos para criar um ambiente virtual com venv
+
+- Para criar um ambiente virtual => python3 -m venv <nomeDoAmbienteVirtual>
+
+- Para ativar o ambiente virtual => <nomeDoAmbienteVirtual>/bin/activate
+
+OBS: voce deve excluir o ambiente virtual do monitoriamento do git expecifiando
+no seu .gitignore 
+
+- Para ativar o ambiente virtual => source <nomeDoAmbienteVirtual>/bin/activate
+
+- Para desativar o ambiente virtual => deactivate
+
+***Se você deseja entrar novamente no ambiente virtual, basta seguir as mesmas instruções acima sobre como ativar um ambiente virtual. Não há necessidade de recriar o ambiente virtual.
+
+- Para baixar o django no ambiente virtual => pip install Django==3.1.3
+
+- Para criar um projeto Django execute o seguinte Comandos => django-admin startproject <nomeDoProjeto>
+
+- Para rodar o servidor entre na pasta cd <nomeDoProjeto) e execute o seguinte comando => 
+python manage.py runserver
